@@ -22,7 +22,7 @@ jobs:
           mkdir -p dist
           # 打包插件源码（排除 git/依赖/运行时文件），命名与 Release 一致
           tar --exclude='.git' --exclude='node_modules' --exclude='config.json' \
-              --exclude='DeepseekMemory' --exclude='runtime.log' --exclude='*.tmp' \
+              --exclude='*.tmp' \
               -czf "dist/dsh-humanized-deepseek-maid-${VERSION}.tar.gz" .
           cd dist
           sha256sum *.tar.gz > SHA256SUMS.txt

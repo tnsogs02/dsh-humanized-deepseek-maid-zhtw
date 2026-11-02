@@ -1,7 +1,5 @@
 # Runtime artifacts — never commit these
 config.json
-DeepseekMemory
-runtime.log
 *.tmp
 
 # Dependencies / build

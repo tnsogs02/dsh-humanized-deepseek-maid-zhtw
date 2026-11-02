@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.6.0] - 2026-11-02
+
+### Added
+- `language` config (`zh-TW` default, `zh-CN`): persona prompt is written natively in Traditional or Simplified Chinese, with `LANG_ZH_TW_ONLY` / `LANG_ZH_CN_ONLY`; language dropdown in the settings card; the card's own UI text follows the selected language (Traditional/Simplified).
+
+### Changed
+- Persona tag `CETACEA_LOLI` → `CETACEA_MAID`; gloss now reads "small, cute blue-haired whale-girl maid" to avoid cloud filters.
+- README is now provided in English, Traditional Chinese (`README.zh-TW.md`) and Simplified Chinese (`README.zh-CN.md`, renamed from `README.zh.md`), each with a language switcher.
+
+### Removed
+- Built-in memory (`DeepseekMemory`, `agent/pre-step` injection, `session/event` recorder, `memoryPath`, déjà-vu and personality-growth rules). Long-term memory is delegated to an external plugin (`dsh-meow-memory` recommended); the prompt keeps only a "never fabricate memories" note.
+- `runtime.log` boot diagnostics.
+
 ## [0.3.0] - 2026-08-16
 
 ### Added

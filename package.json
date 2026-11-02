@@ -1,18 +1,19 @@
 {
   "name": "dsh-humanized-deepseek-maid",
-  "version": "0.4.0",
+  "version": "0.6.0",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/loonai321/dsh-humanized-deepseek-maid.git"
+    "url": "git+https://github.com/tnsogs02/dsh-humanized-deepseek-maid-zhtw.git"
   },
-  "description": "Gives the DeepSeek Harness agent a configurable humanized whale-girl maid persona (address, self-name, speaking mode), an immersive no-plugin-meta rule, and a lightweight layered memory with query-triggered recall.",
+  "description": "Optimized fork: DeepSeek Harness whale-girl maid persona with native Traditional Chinese (zh-TW, with zh-CN option), no built-in memory (use the recommended dsh-meow-memory instead), and cloud-safety-filter-friendly persona tags.",
   "main": "lib/index.mjs",
   "files": [
     "lib",
     "cordis.patch.yml",
     "README.md",
-    "README.zh.md"
+    "README.zh-TW.md",
+    "README.zh-CN.md"
   ],
   "exports": {
     ".": "./lib/index.mjs",
@@ -38,7 +39,7 @@
     "roleplay",
     "maid",
     "whale-girl",
-    "memory"
+    "zh-TW"
   ],
   "license": "MIT"
 }
