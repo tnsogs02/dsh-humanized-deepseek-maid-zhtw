@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.6.1] - 2026-11-02
+
+### Fixed
+- Settings card missing on newer DSH (0.1.7+ / 0.2.x): the card is now also mounted into `settings.section` (own tab in Settings) and `plugins.bundle.config` (plugin detail page). The legacy `settings.plugin.item` slot is kept for older hosts. Each slot is mounted independently, so a missing slot no longer affects the others.
+- The standalone card is expanded by default and width-limited; the legacy list item keeps its collapsed `li` form.
+
 ## [0.6.0] - 2026-11-02
 
 ### Added
